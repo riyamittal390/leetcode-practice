@@ -1,7 +1,6 @@
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
-        // Better
 
         int n = matrix.size();
         int m = matrix[0].size();
