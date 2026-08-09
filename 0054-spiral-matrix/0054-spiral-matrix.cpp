@@ -87,8 +87,8 @@ public:
 
             starting_row++; ending_row--;
             starting_col++; ending_col--;
-            }
+        }
 
-            return ans;
+        return ans;
     }
 };
