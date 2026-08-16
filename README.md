@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/riyamittal390/leetcode-practice/tree/master/0088-merge-sorted-array) |
 | [0118-pascals-triangle](https://github.com/riyamittal390/leetcode-practice/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/riyamittal390/leetcode-practice/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0152-maximum-product-subarray](https://github.com/riyamittal390/leetcode-practice/tree/master/0152-maximum-product-subarray) |
 | [0169-majority-element](https://github.com/riyamittal390/leetcode-practice/tree/master/0169-majority-element) |
 | [0493-reverse-pairs](https://github.com/riyamittal390/leetcode-practice/tree/master/0493-reverse-pairs) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/riyamittal390/leetcode-practice/tree/master/2149-rearrange-array-elements-by-sign) |
@@ -56,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/riyamittal390/leetcode-practice/tree/master/0053-maximum-subarray) |
 | [0118-pascals-triangle](https://github.com/riyamittal390/leetcode-practice/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/riyamittal390/leetcode-practice/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0152-maximum-product-subarray](https://github.com/riyamittal390/leetcode-practice/tree/master/0152-maximum-product-subarray) |
 ## Simulation
 |  |
 | ------- |
