@@ -1,26 +1,67 @@
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-        int i = m - 1;       // last valid element in nums1
-        int j = n - 1;       // last element in nums2
-        int k = m + n - 1;   // last position in nums1
+        
+        // Bruteforce
 
-        while (i >= 0 && j >= 0) {
-            if (nums1[i] > nums2[j]) {
-                nums1[k] = nums1[i];
-                i--;
-            } else {
-                nums1[k] = nums2[j];
-                j--;
+        // long long nums3[m + n];
+        // int left = 0;
+        // int right = 0;
+        // int index = 0;
+
+        // while (left < m && right < n) {
+        //     if (nums1[left] <= nums2[right]) {
+        //         nums3[index] = nums1[left];
+        //         left++, index++;
+        //     }
+        //     else {
+        //         nums3[index] = nums2[right];
+        //         right++, index++;
+        //     }
+        // }
+
+        // while (left < m) {
+        //     nums3[index++] = nums1[left++];
+        // }
+
+        // while (right < n) {
+        //     nums3[index++] = nums2[right++];
+        // }
+
+        // for (int i = 0 ; i < n+m ; i++) {
+        //     if (i < m) {
+        //         nums1[i] = nums3[i];
+        //     }
+        //     else {
+        //         nums2[i-m] = nums3[i];
+        //     }
+        // }
+
+
+
+
+
+
+        // Optimal
+
+        int left = m-1;
+        int right = 0;
+
+        while (left >= 0 && right < n) {
+            if (nums1[left] > nums2[right]) {
+                swap (nums1[left], nums2[right]);
+                left--, right++;
             }
-            k--;
-        }
+            else {
+                break;
+            }
+        } 
 
-        // Remaining elements of nums2
-        while (j >= 0) {
-            nums1[k] = nums2[j];
-            j--;
-            k--;
+        sort (nums1.begin(), nums1.begin() + m);
+        sort (nums2.begin(), nums2.begin() + n);
+
+        for (int i = 0; i < n; i++) {
+            nums1[m + i] = nums2[i];
         }
     }
 };
