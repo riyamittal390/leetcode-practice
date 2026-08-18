@@ -1,25 +1,15 @@
 class Solution {
 public:
-    long long mergeSort(vector<int>& nums, int low, int high) {
-        if (low >= high) return 0;
-
-        int mid = low + (high - low) / 2;
-        long long cnt = 0;
-
-        cnt += mergeSort(nums, low, mid);
-        cnt += mergeSort(nums, mid + 1, high);
-
-        // Count reverse pairs
+    int merge(vector<int>& nums, int low, int mid, int high) {
+        int cnt = 0;
         int j = mid + 1;
 
         for (int i = low; i <= mid; i++) {
-            while (j <= high && (long long)nums[i] > 2LL * nums[j]) {
+            while (j <= high && (long long)nums[i] > 2LL * nums[j])
                 j++;
-            }
             cnt += j - (mid + 1);
         }
 
-        // Merge
         vector<int> temp;
         int i = low;
         j = mid + 1;
@@ -43,7 +33,20 @@ public:
         return cnt;
     }
 
+    int solve(vector<int>& nums, int low, int high) {
+        if (low >= high)
+            return 0;
+
+        int mid = low + (high - low) / 2;
+
+        int cnt = solve(nums, low, mid);
+        cnt += solve(nums, mid + 1, high);
+        cnt += merge(nums, low, mid, high);
+
+        return cnt;
+    }
+
     int reversePairs(vector<int>& nums) {
-        return mergeSort(nums, 0, nums.size() - 1);
+        return solve(nums, 0, nums.size() - 1);
     }
 };
