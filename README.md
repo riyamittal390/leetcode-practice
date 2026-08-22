@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0152-maximum-product-subarray](https://github.com/riyamittal390/leetcode-practice/tree/master/0152-maximum-product-subarray) |
 | [0169-majority-element](https://github.com/riyamittal390/leetcode-practice/tree/master/0169-majority-element) |
 | [0493-reverse-pairs](https://github.com/riyamittal390/leetcode-practice/tree/master/0493-reverse-pairs) |
+| [0704-binary-search](https://github.com/riyamittal390/leetcode-practice/tree/master/0704-binary-search) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/riyamittal390/leetcode-practice/tree/master/2149-rearrange-array-elements-by-sign) |
 ## Two Pointers
 |  |
@@ -81,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0493-reverse-pairs](https://github.com/riyamittal390/leetcode-practice/tree/master/0493-reverse-pairs) |
+| [0704-binary-search](https://github.com/riyamittal390/leetcode-practice/tree/master/0704-binary-search) |
 ## Binary Indexed Tree
 |  |
 | ------- |
